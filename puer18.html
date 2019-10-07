@@ -238,7 +238,8 @@
          `<form action='https://formspree.io/202493@mail.ru' method='POST'>
          <p></p> 
          <label>Введите номер телефона</label>
-         <input type='text' name='tel'  placeholder='Номер телефона' id='tel' maxlength='12' required />
+         <input type='text' name='tel'  placeholder='Номер телефона' id='tel' maxlength='12'
+             required data-validation-required-message="Это поле обязательно для заполнения" required />
          <input type='submit' value='Отправить' class='button'></form>`
       d.getElementById('tel').innerHTML+= totalItems;
 
