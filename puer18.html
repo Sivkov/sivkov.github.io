@@ -226,6 +226,7 @@
       cartCont.innerHTML +=totalItems
 
          /*
+
       cartCont.innerHTML +=
       `<form action='/puer18' method='post' >
       <textarea id='textArea' name='tel'></textarea> 
@@ -235,14 +236,14 @@
       */
       cartCont.innerHTML +=
          `<form action='https://formspree.io/202493@mail.ru' method='POST'>
-          <input type="text" name="name" id='item'>
          <p></p> 
          <label>Введите номер телефона</label>
          <input type='text' name='tel' placeholder='Номер телефона' id='item' maxlength='12' />
          <input type='submit' value='Отправить' class='button'></form>`
+      d.getElementById('item').innerHTML+= totalItems;
+
 
          
-      d.getElementById('item').innerHTML+= totalItems;
 
       let inp = document.querySelector('#tel');
 
