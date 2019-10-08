@@ -148,6 +148,10 @@ footer{
     position: absolute; 
     width: 100%; 
     bottom: -330%;
+<<<<<<< HEAD
+=======
+    right: -310%;
+>>>>>>> 70aedc852004c74f3e157d9815f9c3ff828e8c08
     left: 0%;
     background-color: black;
     color: white;
