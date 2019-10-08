@@ -2,7 +2,7 @@ body, footer, header, menu, article, nav {
     font-family: Geneva, Arial, Helvetica, sans-serif; 
    
 }
-button {
+button, .button {
   float: right;
   color: black;
   font-size: 125%;
@@ -147,8 +147,7 @@ footer{
     text-align: center;
     position: absolute; 
     width: 100%; 
-    bottom: -100%;
-    right: -310%;
+    bottom: -330%;
     left: 0%;
     background-color: black;
     color: white;
