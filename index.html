@@ -203,7 +203,7 @@
    function openCart(e){
 
       let cartData = getCartData(); 
-      let totalItems ='Ваш заказ:';
+      let totalItems ='<strong>Ваш заказ:</strong>';
       let total=0;
       let sendingItems='';
 
@@ -234,7 +234,7 @@
          <input type='submit' value='Отправить' class='button'></form>`
 
          
-      d.getElementById('order').value+= sendingItems+'к оплате '+total+ ' рублей';
+      d.getElementById('order').value+=" "+sendingItems+' к оплате '+total+ ' рублей';
 
       let inp = document.querySelector('#tel');
 
@@ -272,7 +272,7 @@
    addEvent(d.getElementById('checkout'), 'click', openCart);
    addEvent(d.getElementById('clear_cart'), 'click', function(e){
    localStorage.removeItem('cart');
-   cartCont.innerHTML = '<strong>Корзина очишена.<strong>';	
+   cartCont.innerHTML = '<strong>Корзина очищена.<strong>';	
     setTimeout(function(){
          cartCont.innerHTML = '';
             }, 1000);
