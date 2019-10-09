@@ -213,8 +213,8 @@
          for(var items in cartData){
             totalItems += '<tr>';
             for(var i = 0; i < cartData[items].length; i++){
-               totalItems += '<td>' + cartData[items][i] + '</td>';
                sendingItems+= cartData[items][i] +'\n';
+               totalItems += '<td>' + cartData[items][i] + '</td>';
                   }
                   total+= cartData[items][i-2]*cartData[items][i-1]  
 
@@ -227,14 +227,14 @@
 
          cartCont.innerHTML +=
          `<form action='https://formspree.io/202493@mail.ru' method='POST'>
-         <textarea id='textArea'></textarea>
+         <input type='text' name='textarea' placeholder='Номер телефона' id='order'/>
          <p></p> 
          <label>Введите номер телефона</label>
          <input type='text' name='tel' placeholder='Номер телефона' id='item' maxlength='12' required />
          <input type='submit' value='Отправить' class='button'></form>`
 
          
-      d.getElementById('item').value+= totalItems;
+      d.getElementById('order').value+= sendingItems+'к оплате '+total+ ' рублей';
 
       let inp = document.querySelector('#tel');
 
