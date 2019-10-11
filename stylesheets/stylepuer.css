@@ -34,7 +34,7 @@ button, .button {
     height:16%;
     top : 0;
     right: 0;
-    overflow: hidden;
+    overflow: visible;
     
 }
 
