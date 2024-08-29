@@ -5,3 +5,4 @@
 Верстка вырви глаз и оторвите мне руки.
 Никаких фреймфорков. Никого бэкэнда. Никаких бандлов.
 https://sivkov.github.io/
+![Отож!!](https://github.com/Sivkov/sivkov.github.io/blob/master/images/ppuuueerrr.png)
